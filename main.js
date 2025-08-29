@@ -35,14 +35,14 @@ const formFillerTool = new tool({
     await page.$eval('#password', el => el.scrollIntoView({ behavior: 'smooth', block: 'center' }));
     // Fill the form
     
-    await page.type('#firstName', firstName, { delay: 250 })
-    await page.type('#lastName', lastName, { delay: 250 })
+    await page.type('#firstName', firstName, { delay: 200 })
+    await page.type('#lastName', lastName, { delay: 200 })
     await page.$eval('#email', el => el.scrollIntoView());
-    await page.type('#email', email, { delay: 250 })
+    await page.type('#email', email, { delay: 200 })
     await page.click('input#password + button')
-    await page.type('#password', password, { delay: 250 })
+    await page.type('#password', password, { delay: 200 })
     await page.click('input#confirmPassword + button')
-    await page.type('#confirmPassword', password, { delay: 250 })
+    await page.type('#confirmPassword', password, { delay: 200 })
 
     await page.waitForTimeout(2000)
     await page.click('.main-button')
