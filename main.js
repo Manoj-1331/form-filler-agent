@@ -33,11 +33,11 @@ const formFillerTool = new tool({
     await page.waitForTimeout(2000); 
     // scroll karunga password field tak
     await page.$eval('#password', el => el.scrollIntoView({ behavior: 'smooth', block: 'center' }));
-    await page.$eval('#email', el => el.scrollIntoView());
     // Fill the form
-
+    
     await page.type('#firstName', firstName, { delay: 250 })
     await page.type('#lastName', lastName, { delay: 250 })
+    await page.$eval('#email', el => el.scrollIntoView());
     await page.type('#email', email, { delay: 250 })
     await page.click('input#password + button')
     await page.type('#password', password, { delay: 250 })

@@ -6,7 +6,9 @@
   "author": "",
   "type": "module",
   "main": "main.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node main.js"
+  },
   "devDependencies": {
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.3.0"

@@ -1,6 +1,11 @@
 Great work putting all that together! Here's a clean, professional `README.md` file tailored for your **Auto Form Filling Agent** project using OpenAI + Playwright:
 
 ---
+# 🤖 Auto Form Filler Agent
+
+[![Watch the Demo](https://img.youtube.com/vi/l5Dd1Lm8QGg/0.jpg)](https://www.youtube.com/watch?v=l5Dd1Lm8QGg)
+
+This project is an AI-powered automation agent that fills out online forms...
 
 ````markdown
 # 🤖 Auto Form Filler Agent
